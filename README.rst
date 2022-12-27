@@ -87,7 +87,7 @@ Without named groups:
 
 Date that should be matched: ``January    19, 1999``
 
-Date that should not be matched: ``january 19,  1999``
+Date that should not be matched: ``January 19  1999``
 
 |
    
