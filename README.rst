@@ -17,6 +17,18 @@ Without named groups:
 
 |
 
+With and without capitalized month:
+
+.. code-block:: python
+
+   regex = r"([J|j]anuary|[F|f]ebruary|[M|m]arch|[A|a]pril|[M|m]ay|[J|j]une|[J|j]uly|[A|a]ugust]|[S|s]eptember|[O|o]ctober|[N|n]ovember|[D|d]ecember) (\d+), (\d+)"
+   
+Date that should be matched: ``january 19, 1999``
+
+Date that should not be matched: ``JAnuary 19, 1999``
+
+|
+
 With named groups: ``(?P<day>\d+)``
 
 .. code-block:: python
@@ -46,4 +58,3 @@ With zero and more space: ``\s*``
 Date that should be matched: ``January    19, 1999``
 
 Date that should not be matched: ``january 19,  1999``
-
