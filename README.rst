@@ -71,9 +71,7 @@ With at least Year 1:
 
    regex = r"(January|February|March|April|May|June|July|August|September|October|November|December) (\d{1,2}), (\d+)"
    
-Date that should be matched: ``January 19, 123``
-
-Date that should not be matched: ``January 19, 123456789``
+Dates that should be matched: ``January 19, 123`` and ``January 19, 123456789``
 
 Format: Day Month Year (e.g. 19 January 1999)
 ---------------------------------------------
