@@ -85,7 +85,7 @@ Without named groups:
 
    regex = r"(\d{1,2}) (January|February|March|April|May|June|July|August|September|October|November|December) (\d{4})"
 
-Date that should be matched: ``January    19, 1999``
+Date that should be matched: ``19 January 1999``
 
 Date that should not be matched: ``January 19  1999``
 
