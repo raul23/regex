@@ -69,7 +69,7 @@ With at least Year 1:
 
 .. code-block:: python
 
-   (January|February|March|April|May|June|July|August|September|October|November|December) (\d{1,2}), (\d+)
+   regex = r"(January|February|March|April|May|June|July|August|September|October|November|December) (\d{1,2}), (\d+)"
    
 Date that should be matched: ``January 19, 123``
 
