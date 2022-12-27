@@ -57,7 +57,7 @@ With zero and more space: ``\s*``
 
 .. code-block:: python
 
-   regex = r"(January|February|March|April|May|June|July|August|September|October|November|December)\s*(\d+),\s*(\d+)"
+   regex = r"(January|February|March|April|May|June|July|August|September|October|November|December)\s*(\d{1,2}),\s*(\d{4})"
    
 Date that should be matched: ``January    19, 1999``
 
@@ -76,3 +76,16 @@ Dates that should be matched: ``January 19, 123`` and ``January 19, 123456789``
 Format: Day Month Year (e.g. 19 January 1999)
 ---------------------------------------------
 `:information_source:` To test the regular expressions in this section: `regex101.com <https://regex101.com/r/eqpIOP/1>`_
+
+Without named groups:
+
+.. code-block:: python
+
+   regex = r"(\d{1,2}) (January|February|March|April|May|June|July|August|September|October|November|December) (\d{4})"
+
+Date that should be matched: ``January    19, 1999``
+
+Date that should not be matched: ``january 19,  1999``
+
+|
+   
