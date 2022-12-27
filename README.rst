@@ -33,7 +33,7 @@ With at least one space: ``\s+``
 
 Date that should be matched: ``January 19, 1999``
 
-Date that should not be matched: ``January 19,  1999``
+Date that should not be matched: ``January 19,1999``
 
 |
 
