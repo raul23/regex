@@ -33,8 +33,8 @@ With named groups: e.g. ``(?P<day>\d+)``
 
    regex = r"(?P<month>January|February|March|April|May|June|July|August|September|October|November|December) (?P<day>\d{1,2}), (?P<year>\d{4})"
 
-With and without capitalized month
-""""""""""""""""""""""""""""""""""
+With and without capitalized month: e.g. ``[J|j]anuary``
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 .. code-block:: python
 
    regex = r"(([J|j]anuary|[F|f]ebruary|[M|m]arch|[A|a]pril|[M|m]ay|[J|j]une|[J|j]uly|[A|a]ugust]|[S|s]eptember|[O|o]ctober|[N|n]ovember|[D|d]ecember) (\d{1,2}), (\d{4})"
@@ -69,8 +69,8 @@ Date that should not be matched: ``january 19,  1999``
 
 |
 
-With at least Year 1
-""""""""""""""""""""
+With at least Year 1: ``\d{1,2}``
+"""""""""""""""""""""""""""""""""
 .. code-block:: python
 
    regex = r"(January|February|March|April|May|June|July|August|September|October|November|December) (\d{1,2}), (\d+)"
