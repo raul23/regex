@@ -1,6 +1,11 @@
 =================
 Regex with Python
 =================
+.. contents:: **Contents**
+   :depth: 4
+   :local:
+   :backlinks: top
+
 Dates to be matched
 ===================
 Format: Month Day, Year (e.g. January 19, 1999)
