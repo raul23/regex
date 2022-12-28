@@ -86,8 +86,8 @@ Format: Day Month Year (e.g. 19 January 1999)
 
 |
 
-Without named groups
-""""""""""""""""""""
+Without named groups: ``(\d{1,2}) (January|February) (\d{4})``
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 .. code-block:: python
 
    regex = r"(\d{1,2}) (January|February|March|April|May|June|July|August|September|October|November|December) (\d{4})"
