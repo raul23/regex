@@ -27,6 +27,12 @@ Date that should not be matched: ``January 123, 1999``, ``January 19 1999`` and 
 
 |
 
+With named groups: ``(?P<day>\d+)``
+"""""""""""""""""""""""""""""""""""
+.. code-block:: python
+
+   regex = r"(?P<month>January|February|March|April|May|June|July|August|September|October|November|December) (?P<day>\d{1,2}), (?P<year>\d{4})"
+
 With and without capitalized month
 """"""""""""""""""""""""""""""""""
 .. code-block:: python
@@ -36,14 +42,6 @@ With and without capitalized month
 Date that should be matched: ``january 19, 1999``
 
 Date that should not be matched: ``JANUARY 19, 1999``
-
-|
-
-With named groups: ``(?P<day>\d+)``
-"""""""""""""""""""""""""""""""""""
-.. code-block:: python
-
-   regex = r"(?P<month>January|February|March|April|May|June|July|August|September|October|November|December) (?P<day>\d{1,2}), (?P<year>\d{4})"
 
 |
 
