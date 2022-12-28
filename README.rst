@@ -12,8 +12,6 @@ Format: Month Day, Year (e.g. January 19, 1999)
 -----------------------------------------------
 `:information_source:` To test the regular expressions in this section: `regex101.com <https://regex101.com/r/nPuWny/1>`_
 
-|
-
 Without named groups: e.g. ``(January|February) (\d{1,2}), (\d{4})``
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 .. code-block:: python
@@ -78,11 +76,11 @@ With at least Year 1: ``\d+``
    
 Dates that should be matched: ``January 19, 123`` and ``January 19, 123456789``
 
+|
+
 Format: Day Month Year (e.g. 19 January 1999)
 ---------------------------------------------
 `:information_source:` To test the regular expressions in this section: `regex101.com <https://regex101.com/r/eqpIOP/1>`_
-
-|
 
 Without named groups
 """"""""""""""""""""
