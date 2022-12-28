@@ -69,8 +69,8 @@ Date that should not be matched: ``january 19,  1999``
 
 |
 
-With at least Year 1: ``\d{1,2}``
-"""""""""""""""""""""""""""""""""
+With at least Year 1: ``\d+``
+"""""""""""""""""""""""""""""
 .. code-block:: python
 
    regex = r"(January|February|March|April|May|June|July|August|September|October|November|December) (\d{1,2}), (\d+)"
