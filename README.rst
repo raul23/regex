@@ -27,8 +27,8 @@ Date that should not be matched: ``January 123, 1999``, ``January 19 1999`` and 
 
 |
 
-With named groups: ``(?P<day>\d+)``
-"""""""""""""""""""""""""""""""""""
+With named groups: e.g. ``(?P<day>\d+)``
+""""""""""""""""""""""""""""""""""""""""
 .. code-block:: python
 
    regex = r"(?P<month>January|February|March|April|May|June|July|August|September|October|November|December) (?P<day>\d{1,2}), (?P<year>\d{4})"
