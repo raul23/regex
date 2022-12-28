@@ -32,6 +32,8 @@ With named groups: e.g. ``(?P<day>\d+)``
 
    regex = r"(?P<month>January|February|March|April|May|June|July|August|September|October|November|December) (?P<day>\d{1,2}), (?P<year>\d{4})"
 
+|
+
 With and without capitalized month: e.g. ``[J|j]anuary``
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 .. code-block:: python
