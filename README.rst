@@ -190,7 +190,7 @@ Dates that should be matched:
    19 January 12345
 
 `:information_source:` To completely exclude ``19 January 12345``, you must add ``(?!.+)`` (negative lookahead) 
-  at the end of the regex, like this:
+at the end of the regex, like this:
  
   .. code-block:: bash
 
