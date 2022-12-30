@@ -211,4 +211,10 @@ Dates that should not be matched:
    19 january 1234
 
 `:star:` You can add some of the tokens from the `previous section <#format-month-day-year-e-g-january-19-1999>`_ to 
-make the regex more restrictive or flexible, such as ``^(?!0)([0-3]{0,1}\d)`` for the day part (it must not begin with 0).
+make the regex more restrictive or flexible, such as ``^(?!0)([0-3]{0,1}\d)`` for the day part (it must not begin with 0):
+
+.. code-block:: bash
+
+   ^(?!0)([0-3]{0,1}\d) (January|February|March|April|May|June|July|August|September|October|November|December) (\d{4})
+
+
