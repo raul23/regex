@@ -284,7 +284,7 @@ Dates that should not be matched:
 
 |
 
-A more complex regex that restricts month and day to a smaller range of values:
+A more complex regex that restricts month and day to a smaller range of values (i.e. month from 1 to 12 and day from 1 to 31):
 
 .. code-block:: bash
 
