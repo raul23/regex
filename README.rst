@@ -147,8 +147,8 @@ Dates that should not be matched:
 
 |
 
-With at least Year 1: ``(?!0)`` and ``\d+`` (negative lookahead)
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+With at least Year 1: ``(?!0)`` and ``\d+``
+"""""""""""""""""""""""""""""""""""""""""""
 .. code-block:: bash
 
    (January|February|March|April|May|June|July|August|September|October|November|December) (\d{1,2}), (?!0)(\d+)
