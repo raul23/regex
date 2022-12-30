@@ -183,16 +183,16 @@ Dates that should be matched:
 
 .. code-block:: bash
 
-   January 19 1999
-   January 0 1999
-   January 09 1999
-   January 00 1999
+   19 January 1999
+   0 January 1999
+   09 January 1999
+   00 January 1999
 
 Date that should not be matched:
 
 .. code-block:: bash
 
-   January 123, 1999
-   January 19 1234
-   january 19 123
+   123 January, 1999
+   19 January 12345
+   19 january 1234
    
