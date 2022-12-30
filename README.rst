@@ -148,13 +148,13 @@ Dates that should be matched:
    January 10, 1234
    January 1, 12345
    
-`:information_source:` 
+`:information_source:` About the last date (``January 1, 12345``) in the previous example
 
- - For the last date, it is ``January 1, 1234`` that will be matched, the last digit (5) won't be matched.
- - In order to completely exclude ``January 1, 12345``, you must add ``(?!.+)`` (negative lookahead) 
+- For the last date, it is ``January 1, 1234`` that will be matched, the last digit (5) won't be matched.
+- In order to completely exclude ``January 1, 12345``, you must add ``(?!.+)`` (negative lookahead) 
    at the end of the regex, like this::
  
-   (January|February|March|April|May|June|July|August|September|October|November|December) ((?!0)[0-3]{0,1}\d), (\d{4})(?!.+)
+  (January|February|March|April|May|June|July|August|September|October|November|December) ((?!0)[0-3]{0,1}\d), (\d{4})(?!.+)
 
 |
 
