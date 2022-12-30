@@ -1,6 +1,6 @@
-=================
-Regex with Python
-=================
+=====
+Regex
+=====
 .. contents:: **Contents**
    :depth: 4
    :local:
