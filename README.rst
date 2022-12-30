@@ -1,6 +1,6 @@
-=====
-Regex
-=====
+====================
+List of useful regex
+====================
 .. contents:: **Contents**
    :depth: 4
    :local:
