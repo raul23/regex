@@ -84,7 +84,7 @@ Restrict day to not begin with zero: ``(?!0)``, negative lookahead
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 .. code-block:: python
 
-   regex = r"(January|February|March|April|May|June|July|August|September|October|November|December) ((?!0)[0-3]{0,1}\d), (\d{4})"
+   regex = r"(January|February|March|April|May|June|July|August|September|October|November|December) ((?!0)[0-3]{0,1}\d), (\d{4})\n"
 
 Dates that should be matched::
 
