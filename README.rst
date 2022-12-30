@@ -27,7 +27,7 @@ Dates that should be matched:
    January 19, 1999
    January 09, 1999
 
-Date that should not be matched:
+Dates that should not be matched:
 
 .. code-block:: bash
 
@@ -51,18 +51,19 @@ With and without capitalized month: e.g. ``[J|j]anuary``
 
    ([J|j]anuary|[F|f]ebruary|[M|m]arch|[A|a]pril|[M|m]ay|[J|j]une|[J|j]uly|[A|a]ugust]|[S|s]eptember|[O|o]ctober|[N|n]ovember|[D|d]ecember) (\d{1,2}), (\d{4})
    
-Date that should be matched:
+Dates that should be matched:
 
 .. code-block:: bash
 
    january 19, 1999
    January 19, 1999
 
-Date that should not be matched:
+Dates that should not be matched:
 
 .. code-block:: bash
 
    JANUARY 19, 1999
+   MarcH 19, 1999
 
 |
 
@@ -72,7 +73,7 @@ With at least one space: ``\s+``
 
    (January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2}),\s+(\d{4})
 
-Date that should be matched:
+Dates that should be matched:
 
 .. code-block:: bash
 
@@ -81,7 +82,7 @@ Date that should be matched:
    January     19, 1999
    January     19,    1999
 
-Date that should not be matched: 
+Dates that should not be matched: 
 
 .. code-block:: bash
 
@@ -97,7 +98,7 @@ With zero and more space: ``\s*``
 
    (January|February|March|April|May|June|July|August|September|October|November|December)\s*(\d{1,2}),\s*(\d{4})
    
-Date that should be matched:
+Dates that should be matched:
 
 .. code-block:: bash
 
@@ -202,7 +203,7 @@ at the end of the regex, like this:
 
 |
 
-Date that should not be matched:
+Dates that should not be matched:
 
 .. code-block:: bash
 
