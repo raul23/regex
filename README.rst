@@ -280,4 +280,4 @@ Dates that should not be matched:
 - ``\d{4}``: year takes exactly 4 digits
 - ``(?!00)``: exclude ``00`` as a month and day
 - ``\d{1,2}``: month and day take 1 or 2 digits
-- ``(?!.+)``: exclude date with day longer than 2 digits
+- ``(?!.+)``: exclude dates with days longer than 2 digits
