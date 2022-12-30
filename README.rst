@@ -86,12 +86,17 @@ Restrict day to not begin with zero: ``(?!0)``, negative lookahead
 
    regex = r"(January|February|March|April|May|June|July|August|September|October|November|December) ((?!0)[0-3]{0,1}\d), (\d{4})\n"
 
-Dates that should be matched::
+Dates that should be matched:
+
+.. code-block:: bash
 
    January 1, 1234
    January 10, 1234
-Dates that should not be matched:: 
+   
+Dates that should not be matched:
 
+.. code-block:: bash
+   
    January 01, 1234
    January 00, 1234
    January 1, 12345
