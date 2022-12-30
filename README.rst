@@ -33,7 +33,7 @@ Date that should not be matched:
 
    January 123, 1999
    January 19 1999
-   January 19 123
+   January 19, 123
 
 |
 
