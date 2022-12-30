@@ -236,3 +236,48 @@ Dates that should not be matched:
    123 January, 1999
    19 january 1234
  
+|
+
+Format: YYYY-MM-DD with regex only (e.g. 1940-01-19)
+----------------------------------------------------
+`:information_source:` To test the regular expressions in this section: `regex101.com <https://regex101.com/r/eqpIOP/2>`_
+
+|
+
+Without named groups: ``^(?!0)\d{4}-(?!00)\d{1,2}-(?!00)\d{1,2}(?!.+)``
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+.. code-block:: bash
+
+   ^(?!0)\d{4}-(?!00)\d{1,2}-(?!00)\d{1,2}(?!.+)
+   
+Dates that should be matched:
+
+.. code-block:: bash
+
+   1940-11-19
+   1500-01-19
+   1980-01-01
+   1980-1-1
+   1980-1-01
+
+Dates that should not be matched:
+
+.. code-block:: bash
+
+   1980-00-00
+   1980-01-00
+   2019-123-20
+   1940-12-123
+   0-01-19
+   0000-12-25
+   12-12-12
+   
+|
+
+`:information_source:` Explaining the different parts of ``^(?!0)\d{4}-(?!00)\d{1,2}-(?!00)\d{1,2}(?!.+)``
+
+- ``^(?!0)``: year doesn't start with zero
+- ``\d{4}``: year takes exactly 4 digits
+- ``(?!00)``: exclude ``00`` as a month and day
+- ``\d{1,2}``: month and day take 1 or 2 digits
+- ``(?!.+)``: exclude date with day longer than 2 digits
