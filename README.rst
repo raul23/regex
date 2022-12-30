@@ -316,7 +316,7 @@ Dates that should not be matched:
 
 |
 
-`:information_source:` 
+`:information_source:` Explaining ``^(?!0)\d{4}-((?!00)(?!13|14|15|16|17|18|19)((?![2-9])\d{0,1})(\d))-((?!00)(?!32|33|34|35|36|37|38|39)((?![4-9])\d{0,1})(\d))(?!.+)``
 
 - ``(?!13|14|15|16|17|18|19)``: since we accept the first digit of a two-digits month to be 0 or 1, we further restrict the month to not be
   in the range [13-19]
