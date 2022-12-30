@@ -192,9 +192,9 @@ Dates that should be matched:
 `:information_source:` To completely exclude ``19 January 12345``, you must add ``(?!.+)`` (negative lookahead) 
 at the end of the regex, like this:
  
-  .. code-block:: bash
+.. code-block:: bash
 
-     (\d{1,2}) (January|February|March|April|May|June|July|August|September|October|November|December) (\d{4})(?!.+)
+   (\d{1,2}) (January|February|March|April|May|June|July|August|September|October|November|December) (\d{4})(?!.+)
 
 Date that should not be matched:
 
