@@ -154,9 +154,10 @@ Dates that should not be matched:
 
 .. code-block:: bash
    
-   January 01, 1234
    January 00, 1234
-   January 123, 12345
+   January 01, 1234
+   January 012, 1234
+   January 123, 1234
 
 Format: Day Month Year (e.g. 19 January 1999)
 ---------------------------------------------
