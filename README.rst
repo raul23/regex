@@ -96,13 +96,11 @@ Date that should be matched:
 .. code-block:: bash
 
    January    19, 1999
-
-Date that should not be matched:
-
-.. code-block:: bash
-
-   january 19,  1999
-
+   January 19,       1999
+   January 19,1999
+   January19,1999
+   January19, 1999
+   
 |
 
 With at least Year 1: ``\d+``
