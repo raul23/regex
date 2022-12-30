@@ -179,15 +179,20 @@ Without named groups: ``(\d{1,2}) (January|February) (\d{4})``
 
    (\d{1,2}) (January|February|March|April|May|June|July|August|September|October|November|December) (\d{4})
 
-Date that should be matched:
+Dates that should be matched:
 
 .. code-block:: bash
 
-   19 January 1999
+   January 19 1999
+   January 0 1999
+   January 09 1999
+   January 00 1999
 
 Date that should not be matched:
 
 .. code-block:: bash
 
-   January 19 1999
+   January 123, 1999
+   January 19 1234
+   january 19 123
    
