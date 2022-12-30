@@ -318,10 +318,10 @@ Dates that should not be matched:
 
 `:information_source:` 
 
-- ``(?!13|14|15|16|17|18|19)``: since we accept the first digit of a two-digits month to be 0 or 1, we further restrict it to not be
+- ``(?!13|14|15|16|17|18|19)``: since we accept the first digit of a two-digits month to be 0 or 1, we further restrict the month to not be
   in the range [13-19] (inclusive)
 - ``(?![2-9])\d{0,1}``: the first digit of a two-digits month must not start with a value greater than 1
 - ``(?!32|33|34|35|36|37|38|39)``: since we accept the first digit of a two-digits day to be in the range [0-3] (inclusive), 
-  we further restrict. it to not be in the range [32-39] (inclusive)
-- ``(?![4-9])\d{0,1}``: the first digit of a two-digits month must not start with a value greater than 3
+  we further restrict the day to not be in the range [32-39] (inclusive)
+- ``(?![4-9])\d{0,1}``: the first digit of a two-digits day must not start with a value greater than 3
 - ``(?!.+)``: exclude dates with days longer than 2 digits
