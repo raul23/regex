@@ -169,6 +169,8 @@ Dates that should not be matched:
    January 012, 1234
    January 123, 1234
 
+|
+
 Format: Day Month Year (e.g. 19 January 1999)
 ---------------------------------------------
 `:information_source:` To test the regular expressions in this section: `regex101.com <https://regex101.com/r/eqpIOP/1>`_
