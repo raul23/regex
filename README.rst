@@ -215,6 +215,4 @@ make the regex more restrictive or flexible, such as ``^(?!0)([0-3]{0,1}\d)`` fo
 
 .. code-block:: bash
 
-   ^(?!0)([0-3]{0,1}\d) (January|February|March|April|May|June|July|August|September|October|November|December) (\d{4})
-
-
+   ^(?!0)(\d{1,2}) (January|February|March|April|May|June|July|August|September|October|November|December) (\d{4})
