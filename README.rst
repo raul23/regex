@@ -158,6 +158,8 @@ Dates that should be matched:
 
      (January|February|March|April|May|June|July|August|September|October|November|December) ((?!0)[0-3]{0,1}\d), (\d{4})(?!.+)
 
+|
+
 Dates that should not be matched:
 
 .. code-block:: bash
@@ -195,6 +197,8 @@ at the end of the regex, like this:
 .. code-block:: bash
 
    (\d{1,2}) (January|February|March|April|May|June|July|August|September|October|November|December) (\d{4})(?!.+)
+
+|
 
 Date that should not be matched:
 
