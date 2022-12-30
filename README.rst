@@ -82,9 +82,9 @@ Dates that should be matched: ``January 19, 123`` and ``January 19, 123456789``
 
 Restrict day to not begin with zero: ``(?!0)``, negative lookahead
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-.. code-block:: python
+.. code-block:: bash
 
-   regex = r"(January|February|March|April|May|June|July|August|September|October|November|December) ((?!0)[0-3]{0,1}\d), (\d{4})\n"
+   "(January|February|March|April|May|June|July|August|September|October|November|December) ((?!0)[0-3]{0,1}\d), (\d{4})\n
 
 Dates that should be matched:
 
