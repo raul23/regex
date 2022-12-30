@@ -152,7 +152,7 @@ Dates that should be matched:
 
 - For the last date, it is ``January 1, 1234`` that will be matched, the last digit (5) won't be matched.
 - In order to completely exclude ``January 1, 12345``, you must add ``(?!.+)`` (negative lookahead) 
-   at the end of the regex, like this:
+  at the end of the regex, like this:
  
   .. code-block:: bash
 
