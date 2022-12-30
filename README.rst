@@ -80,6 +80,23 @@ Dates that should be matched: ``January 19, 123`` and ``January 19, 123456789``
 
 |
 
+Restrict day to not begin with zero: ``(?!0)``, negative lookahead
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+.. code-block:: python
+
+   regex = r"(January|February|March|April|May|June|July|August|September|October|November|December) ((?!0)[0-3]{0,1}\d), (\d{4})"
+
+Dates that should be matched::
+
+   January 1, 1234
+   January 10, 1234
+Dates that should not be matched:: 
+
+   January 01, 1234
+   January 00, 1234
+   January 1, 12345
+   January 123, 12345
+
 Format: Day Month Year (e.g. 19 January 1999)
 ---------------------------------------------
 `:information_source:` To test the regular expressions in this section: `regex101.com <https://regex101.com/r/eqpIOP/1>`_
