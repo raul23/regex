@@ -49,7 +49,7 @@ With and without capitalized month: e.g. ``[J|j]anuary``
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 .. code-block:: bash
 
-   (([J|j]anuary|[F|f]ebruary|[M|m]arch|[A|a]pril|[M|m]ay|[J|j]une|[J|j]uly|[A|a]ugust]|[S|s]eptember|[O|o]ctober|[N|n]ovember|[D|d]ecember) (\d{1,2}), (\d{4})
+   ([J|j]anuary|[F|f]ebruary|[M|m]arch|[A|a]pril|[M|m]ay|[J|j]une|[J|j]uly|[A|a]ugust]|[S|s]eptember|[O|o]ctober|[N|n]ovember|[D|d]ecember) (\d{1,2}), (\d{4})
    
 Date that should be matched:
 
