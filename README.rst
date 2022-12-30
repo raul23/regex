@@ -148,7 +148,7 @@ Dates that should be matched:
    January 10, 1234
    January 1, 12345
    
-`:information_source:` For the last date, it is `January 1, 1234` that will be matched, the last digit (5) won't be matched.
+`:information_source:` For the last date, it is ``January 1, 1234`` that will be matched, the last digit (5) won't be matched.
    
 Dates that should not be matched:
 
