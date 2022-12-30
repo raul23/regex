@@ -146,6 +146,9 @@ Dates that should be matched:
 
    January 1, 1234
    January 10, 1234
+   January 1, 12345
+   
+`:information_source:` For the last date, it is `January 1, 1234` that will be matched, the last digit (5) won't be matched.
    
 Dates that should not be matched:
 
@@ -153,7 +156,6 @@ Dates that should not be matched:
    
    January 01, 1234
    January 00, 1234
-   January 1, 12345
    January 123, 12345
 
 Format: Day Month Year (e.g. 19 January 1999)
