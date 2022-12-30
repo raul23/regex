@@ -240,7 +240,7 @@ Dates that should not be matched:
 
 Format: YYYY-MM-DD with regex only (e.g. 1940-01-19)
 ----------------------------------------------------
-`:information_source:` To test the regular expressions in this section: `regex101.com <https://regex101.com/r/eqpIOP/2>`_
+`:information_source:` To test the regular expressions in this section: `regex101.com <https://regex101.com/r/MeoTOW/1>`_
 
 |
 
