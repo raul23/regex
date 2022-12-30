@@ -281,3 +281,47 @@ Dates that should not be matched:
 - ``(?!00)``: exclude ``00`` as a month and day
 - ``\d{1,2}``: month and day take 1 or 2 digits
 - ``(?!.+)``: exclude dates with days longer than 2 digits
+
+|
+
+A more complex regex that restricts month and day to a smaller range of values:
+
+.. code-block:: bash
+
+   ^(?!0)\d{4}-((?!00)(?!13|14|15|16|17|18|19)((?![2-9])\d{0,1})(\d))-((?!00)(?!32|33|34|35|36|37|38|39)((?![4-9])\d{0,1})(\d))(?!.+)
+   
+Dates that should be matched:
+
+.. code-block:: bash
+
+   1940-11-19
+   1500-01-19
+   1980-01-01
+   1980-1-1
+   1980-1-01
+
+Dates that should not be matched:
+
+.. code-block:: bash
+
+   1980-13-30
+   1980-12-32
+   1980-00-00
+   1980-01-00
+   2019-123-20
+   1940-12-123
+   0-01-19
+   0000-12-25
+   12-12-12
+
+|
+
+`:information_source:` 
+
+- ``(?!13|14|15|16|17|18|19)``: since we accept the first digit of a two-digits month to be 0 or 1, we further restrict it to not be
+  in the range [13-19] (inclusive)
+- ``(?![2-9])\d{0,1}``: the first digit of a two-digits month must not start with a value greater than 1
+- ``(?!32|33|34|35|36|37|38|39)``: since we accept the first digit of a two-digits day to be in the range [0-3] (inclusive), 
+  we further restrict. it to not be in the range [32-39] (inclusive)
+- ``(?![4-9])\d{0,1}``: the first digit of a two-digits month must not start with a value greater than 3
+- ``(?!.+)``: exclude dates with days longer than 2 digits
