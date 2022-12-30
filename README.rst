@@ -37,8 +37,8 @@ Dates that should not be matched:
 
 |
 
-With named groups: e.g. ``(?P<day>\d+)``
-""""""""""""""""""""""""""""""""""""""""
+With named groups: e.g. ``(?P<day>\d{1,2})``
+""""""""""""""""""""""""""""""""""""""""""""
 .. code-block:: bash
 
    (?P<month>January|February|March|April|May|June|July|August|September|October|November|December) (?P<day>\d{1,2}), (?P<year>\d{4})
