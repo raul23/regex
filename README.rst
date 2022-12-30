@@ -109,23 +109,33 @@ Date that should be matched:
    
 |
 
-With at least Year 1: ``\d+``
-"""""""""""""""""""""""""""""
+With at least Year 1: (?!0) and ``\d+`` (negative lookahead)
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 .. code-block:: bash
 
-   (January|February|March|April|May|June|July|August|September|October|November|December) (\d{1,2}), (\d+)
+   (January|February|March|April|May|June|July|August|September|October|November|December) (\d{1,2}), (?!0)(\d+)
 
 Dates that should be matched:
 
 .. code-block:: bash
 
+   January 19, 1
+   January 19, 10
    January 19, 123
    January 19, 123456789
 
+Dates that should not be matched:
+
+.. code-block:: bash
+
+   January 19, 0
+   January 19, 01
+   January 19, 00
+
 |
 
-Restrict day to not begin with zero: ``(?!0)``, negative lookahead
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Restrict day to not begin with zero: ``(?!0)`` (negative lookahead)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 .. code-block:: bash
 
    (January|February|March|April|May|June|July|August|September|October|November|December) ((?!0)[0-3]{0,1}\d), (\d{4})\n
