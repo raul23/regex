@@ -210,9 +210,29 @@ Dates that should not be matched:
    123 January, 1999
    19 january 1234
 
+|
+
 `:star:` You can add some of the tokens from the `previous section <#format-month-day-year-e-g-january-19-1999>`_ to 
 make the regex more restrictive or flexible, such as ``^(?!0)`` for the day part (it must not begin with 0):
 
 .. code-block:: bash
 
    ^(?!0)(\d{1,2}) (January|February|March|April|May|June|July|August|September|October|November|December) (\d{4})
+
+Dates that should be matched:
+
+.. code-block:: bash
+
+   19 January 1999
+   19 January 12345
+
+Dates that should not be matched:
+
+.. code-block:: bash
+
+   0 January 1999
+   09 January 1999
+   00 January 1999
+   123 January, 1999
+   19 january 1234
+ 
