@@ -107,31 +107,6 @@ Dates that should be matched:
    January 19,1999
    January19,1999
    January19, 1999
-   
-|
-
-With at least Year 1: ``(?!0)`` and ``\d+`` (negative lookahead)
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-.. code-block:: bash
-
-   (January|February|March|April|May|June|July|August|September|October|November|December) (\d{1,2}), (?!0)(\d+)
-
-Dates that should be matched:
-
-.. code-block:: bash
-
-   January 19, 1
-   January 19, 10
-   January 19, 123
-   January 19, 123456789
-
-Dates that should not be matched:
-
-.. code-block:: bash
-
-   January 19, 0
-   January 19, 01
-   January 19, 00
 
 |
 
@@ -169,6 +144,33 @@ Dates that should not be matched:
    January 01, 1234
    January 012, 1234
    January 123, 1234
+
+|
+
+With at least Year 1: ``(?!0)`` and ``\d+`` (negative lookahead)
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+.. code-block:: bash
+
+   (January|February|March|April|May|June|July|August|September|October|November|December) (\d{1,2}), (?!0)(\d+)
+
+`:information_source:` ``(?!0)`` is used to exclude dates with years that start with 0 (e.g. ``January 19, 01``).
+
+Dates that should be matched:
+
+.. code-block:: bash
+
+   January 19, 1
+   January 19, 10
+   January 19, 123
+   January 19, 123456789
+
+Dates that should not be matched:
+
+.. code-block:: bash
+
+   January 19, 0
+   January 19, 01
+   January 19, 00
 
 |
 
